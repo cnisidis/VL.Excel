@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="P2BycSdhG0RPUNHyu6qDig" LanguageVersion="2022.5.0-0411-29671afbfa" Version="0.128">
+  <NugetDependency Id="Vy4Qst5jEBkNsI3eexewOb" Location="VL.CoreLib" Version="2022.5.0-0411-g29671afbfa" />
+  <Patch Id="HibyCTIHCsqNT9P0Y9O66D">
+    <Canvas Id="Q7uPWSPxWwkPyKbjwM3DVy" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="Q47rfFCRA2DN3Kzr47Yup9">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="EEviv7TegyFMPUxLrMyI1C">
+        <Canvas Id="KPzeyF7eFnnQK2yqerf2qD" CanvasType="Group">
+          <Node Bounds="267,295,85,19" Id="SlSD6DbsOdeNonGJ6X70mf">
+            <p:NodeReference LastCategoryFullName="VL.Excel" LastSymbolSource="VL.Excel.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Excel" />
+              <Choice Kind="ProcessAppFlag" Name="Reader (Excel)" />
+            </p:NodeReference>
+            <Pin Id="IyaAbCspII8MTIGQ1bhJRp" Name="Load" Kind="InputPin" />
+            <Pin Id="CgsYA0SNCIYOcuNjmd24Xe" Name="Excel File" Kind="InputPin" />
+            <Pin Id="U71cRANkUdHNlSRsrmARwl" Name="Mode" Kind="InputPin" />
+            <Pin Id="NjahJhxwmvbPbgdUl8nsDu" Name="Access" Kind="InputPin" DefaultValue="ReadWrite" />
+            <Pin Id="H2hQHiTDOGFO3FajDLfTs0" Name="Share" Kind="InputPin" DefaultValue="ReadWrite" />
+            <Pin Id="AWvqDwgeQZrMi1Y4KkpGNo" Name="DataSet" Kind="OutputPin" />
+            <Pin Id="RBRHVbtsjQEMOrZiTFtH9P" Name="Configuration" Kind="InputPin" />
+          </Node>
+          <Pad Id="LUe7qRRvO0ANJiFt6AYSb3" Comment="Excel File" Bounds="290,214,140,15" ShowValueBox="true" isIOBox="true" Value="..\..\test\test.xls">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Ffxb2GLQkd8O6cB9iXcmUh" Comment="Load" Bounds="196,210,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="367,251,79,19" Id="QTxj6ikMj2CMYWheOpKwAa">
+            <p:NodeReference LastCategoryFullName="VL.Excel" LastSymbolSource="VL.Excel.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Configuration" />
+            </p:NodeReference>
+            <Pin Id="R2VDLXw0ZM3NLQUlmvwpZb" Name="Codepage" Kind="InputPin" />
+            <Pin Id="KdBlMkyzDTWOk5S0VPTssk" Name="Leaveopen" Kind="InputPin" />
+            <Pin Id="VaKYcHqDPJxODRBkwEyrNR" Name="AutoDetectSeparators" Kind="InputPin" />
+            <Pin Id="AYQeV1F3VXjMTo0xCA1G2D" Name="Configuration" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="268,337,70,19" Id="EjZjQdxJdRUNj7A9ix7TnW">
+            <p:NodeReference LastCategoryFullName="VL.Excel" LastSymbolSource="VL.Excel.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ToXElement" />
+            </p:NodeReference>
+            <Pin Id="MCBFpPztB0CLusVqRvhrAH" Name="DataSet" Kind="InputPin" />
+            <Pin Id="O9mQeLvro9nLwLjJeNkEs7" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="268,377,55,19" Id="Jg96ljj2TjiMrEPGarCJR3">
+            <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="ToString" />
+            </p:NodeReference>
+            <Pin Id="L3IT8uhW5VwO4Uz1pZALPX" Name="Input" Kind="InputPin" />
+            <Pin Id="LHt5LkdvXPyQWWgE2UVJOz" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="TBbprE2GBFeL4UhTRcZ6j8" Comment="" Bounds="270,442,302,297" ShowValueBox="true" isIOBox="true" />
+        </Canvas>
+        <Patch Id="AMedaA8ovhGLF1KaP0xyQt" Name="Create" />
+        <Patch Id="AHEFQNWUTFjNHeGpViZB3P" Name="Update" />
+        <ProcessDefinition Id="MQHvg9JS0XHMyx1BXRPW9w">
+          <Fragment Id="OkpsUxnIVxELXZaAQS4x5T" Patch="AMedaA8ovhGLF1KaP0xyQt" Enabled="true" />
+          <Fragment Id="BK627CaZejCLhNeUt0awbB" Patch="AHEFQNWUTFjNHeGpViZB3P" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="JBd8a27jR0TPhm7Srxz23I" Ids="LUe7qRRvO0ANJiFt6AYSb3,CgsYA0SNCIYOcuNjmd24Xe" />
+        <Link Id="Jt5mYa8eX7QMS1mSl1h2Uy" Ids="Ffxb2GLQkd8O6cB9iXcmUh,IyaAbCspII8MTIGQ1bhJRp" />
+        <Link Id="Erc0qGBhSdqOdBLCZ8Duik" Ids="AYQeV1F3VXjMTo0xCA1G2D,RBRHVbtsjQEMOrZiTFtH9P" />
+        <Link Id="QrHxACmTj8mL9LbWRvIdja" Ids="AWvqDwgeQZrMi1Y4KkpGNo,MCBFpPztB0CLusVqRvhrAH" />
+        <Link Id="HbdQniSbMaBLxy1DlVeyMU" Ids="O9mQeLvro9nLwLjJeNkEs7,L3IT8uhW5VwO4Uz1pZALPX" />
+        <Link Id="F7O0LyMKNp0NjedfVNXc53" Ids="LHt5LkdvXPyQWWgE2UVJOz,TBbprE2GBFeL4UhTRcZ6j8" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="MNGTz9MSfg8QRynaLGghiM" Location="VL.Excel" Version="0.0.0" />
+</Document>
