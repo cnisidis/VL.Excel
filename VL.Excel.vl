@@ -14,7 +14,7 @@
         </p:NodeReference>
         <Patch Id="DcZvp3yiWthLSylRw4WTAS">
           <Canvas Id="E9KmRQ3sqqdPCvQdUxLQ1r" CanvasType="Group">
-            <Node Bounds="430,168,519,318" Id="Bw2rqFmHwlRLbedUmGWdN9">
+            <Node Bounds="407,168,719,318" Id="Bw2rqFmHwlRLbedUmGWdN9">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="ProcessStatefulRegion" Name="Cache" />
                 <FullNameCategoryReference ID="Primitive" />
@@ -23,62 +23,15 @@
               <Pin Id="G6JoGfGYTXrPQ5pCbb9Hzk" Name="Dispose Cached Outputs" Kind="InputPin" />
               <Pin Id="F7cC5eVAFijPqBGu2lEAu5" Name="Has Changed" Kind="OutputPin" />
               <ControlPoint Id="COAk9eJUMjmQb6OWdAzgHl" Bounds="518,479" Alignment="Bottom" />
+              <ControlPoint Id="J4DWN9wCKz5QYoGsl1GhuX" Bounds="514,175" Alignment="Top" />
+              <ControlPoint Id="FP61FZHoA7rO5hSHofMXDI" Bounds="616,174" Alignment="Top" />
+              <ControlPoint Id="LuPlRMDV4O0QHxsk9A4RbD" Bounds="575,174" Alignment="Top" />
+              <ControlPoint Id="F34ALfIE6yFMFFdvfKN9V0" Bounds="533,174" Alignment="Top" />
+              <ControlPoint Id="HD7t4O84q1LL7fvVmaDXvw" Bounds="555,174" Alignment="Top" />
               <Patch Id="FCiOms7QFxhOttMYzi6BBH" ManuallySortedPins="true">
                 <Patch Id="ICTG4JlqvboNUHhG9KpF4p" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="RTj5CYLeHB0PL7VKXEgPWX" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="513,350,105,19" Id="UA255ubFgNgL2CLiuyHEzq">
-                  <p:NodeReference LastCategoryFullName="ExcelDataReader.ExcelReaderFactory" LastSymbolSource="ExcelDataReader.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="ExcelDataReader" />
-                    <Choice Kind="OperationCallFlag" Name="CreateBinaryReader" />
-                  </p:NodeReference>
-                  <Pin Id="HtA3Kism7phLRykDutbsV6" Name="File Stream" Kind="InputPin" />
-                  <Pin Id="FiWCq9FxAPAMVFv18pWrjN" Name="Configuration" Kind="InputPin" />
-                  <Pin Id="NHRXDkyhCvCPjYR99BilQX" Name="Result" Kind="OutputPin" />
-                </Node>
-                <Node Bounds="513,277,65,26" Id="P78aX47RdUULNa0UQOi5ur">
-                  <p:NodeReference LastCategoryFullName="System.IO.FileStream" LastSymbolSource="System.IO.FileSystem.dll" OverloadStrategy="AllPinsThatAreNotCommon">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="FileStream" />
-                    <Choice Kind="OperationCallFlag" Name="Create" />
-                    <PinReference Kind="InputPin" Name="Path" />
-                    <PinReference Kind="InputPin" Name="Mode" />
-                    <PinReference Kind="InputPin" Name="Access" />
-                    <PinReference Kind="InputPin" Name="Share" />
-                  </p:NodeReference>
-                  <Pin Id="QTzVsbokqEuL4kCNgkqfaZ" Name="Path" Kind="InputPin" />
-                  <Pin Id="L9io7pQ2h9NPvgYZu8PGmb" Name="Mode" Kind="InputPin" DefaultValue="Open" />
-                  <Pin Id="Mg5s38arAwZMxIv3MywhGO" Name="Access" Kind="InputPin" DefaultValue="Read" />
-                  <Pin Id="HsfRSyqSrwoPnlkUNuvnTH" Name="Share" Kind="InputPin" DefaultValue="ReadWrite" />
-                  <Pin Id="BzQVdIFbtmmL692z0PNMAj" Name="Output" Kind="StateOutputPin" />
-                </Node>
-                <Node Bounds="515,419,114,26" Id="HMw6ybbH5kMLB3zcw4nZdH">
-                  <p:NodeReference LastCategoryFullName="ExcelDataReader.ExcelDataReaderExtensions" LastSymbolSource="ExcelDataReader.DataSet.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="AsDataSet" />
-                  </p:NodeReference>
-                  <Pin Id="GDjgndyk7h8NC4Epg9KMvn" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="Fu2Mip37l85PPClTg8zd4r" Name="Configuration" Kind="InputPin" />
-                  <Pin Id="OBHzvLG5Z7pNZjx7qZueh0" Name="Result" Kind="OutputPin" />
-                </Node>
-                <Node Bounds="442,420,59,26" Id="O5uHgVw7VcqNCkQ4KqHt5P">
-                  <p:NodeReference LastCategoryFullName="System.Data.IDataReader" LastSymbolSource="System.Data.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="Close" />
-                    <CategoryReference Kind="AssemblyCategory" Name="IDataReader" NeedsToBeDirectParent="true" />
-                  </p:NodeReference>
-                  <Pin Id="USCnkQRrwFbLsWOZYOMabQ" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="RNWykkfO1OUMBqDFXe1orw" Name="Output" Kind="StateOutputPin" />
-                </Node>
-                <Node Bounds="512,218,55,19" Id="QGXkiLsYX42Ncw2dkWrxUl">
-                  <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="VL.CoreLib.vl">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="ToString" />
-                  </p:NodeReference>
-                  <Pin Id="RKPCPvsdM7XLdkTUFLpq7E" Name="Input" Kind="InputPin" />
-                  <Pin Id="FbT965uCGjEQLNTBFmxSfh" Name="Result" Kind="OutputPin" />
-                </Node>
-                <Node Bounds="702,360" Id="AJXR8pVh4HSN5wonNUxNoG">
+                <Node Bounds="879,352,58,26" Id="AJXR8pVh4HSN5wonNUxNoG">
                   <p:NodeReference LastCategoryFullName="System.Console" LastSymbolSource="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="WriteLine" />
@@ -86,18 +39,80 @@
                   <Pin Id="LX2iMuwB2FDPIHqteyKfhi" Name="Value" Kind="InputPin" />
                   <Pin Id="SsHUF47fsruMpwJYN44OoX" Name="Apply" Kind="InputPin" DefaultValue="True" />
                 </Node>
-                <Pad Id="Q8VtIGfjLKTNv7cUm9HotA" Comment="Value" Bounds="704,333,186,15" ShowValueBox="true" isIOBox="true" Value="Success: Excel File loaded">
+                <Pad Id="Q8VtIGfjLKTNv7cUm9HotA" Comment="Value" Bounds="881,325,186,15" ShowValueBox="true" isIOBox="true" Value="Success: Excel File loaded">
                   <p:TypeAnnotation>
                     <Choice Kind="ImmutableTypeFlag" Name="String" />
                     <FullNameCategoryReference ID="Primitive" />
                   </p:TypeAnnotation>
                 </Pad>
+                <Node Bounds="451,213,205,241" Id="PacvE68DgxJNkbzPoD5pcr">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                    <CategoryReference Kind="Category" Name="Primitive" />
+                    <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                  </p:NodeReference>
+                  <Pin Id="G3sfQmF80JfPbmAOyHi3bq" Name="Condition" Kind="InputPin" />
+                  <Patch Id="Q0fRmzihA4BPVRERR2KdQz" ManuallySortedPins="true">
+                    <Patch Id="RQgUvOB5kOHOMkVy08Mx4e" Name="Create" ManuallySortedPins="true" />
+                    <Patch Id="OhbHpcAcH9DLDJVVUTLLI8" Name="Then" ManuallySortedPins="true" />
+                    <Node Bounds="513,350,105,19" Id="UA255ubFgNgL2CLiuyHEzq">
+                      <p:NodeReference LastCategoryFullName="ExcelDataReader.ExcelReaderFactory" LastSymbolSource="ExcelDataReader.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="AssemblyCategory" Name="ExcelDataReader" />
+                        <Choice Kind="OperationCallFlag" Name="CreateBinaryReader" />
+                      </p:NodeReference>
+                      <Pin Id="HtA3Kism7phLRykDutbsV6" Name="File Stream" Kind="InputPin" />
+                      <Pin Id="FiWCq9FxAPAMVFv18pWrjN" Name="Configuration" Kind="InputPin" />
+                      <Pin Id="NHRXDkyhCvCPjYR99BilQX" Name="Result" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="513,277,65,26" Id="P78aX47RdUULNa0UQOi5ur">
+                      <p:NodeReference LastCategoryFullName="System.IO.FileStream" LastSymbolSource="System.IO.FileSystem.dll" OverloadStrategy="AllPinsThatAreNotCommon">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="AssemblyCategory" Name="FileStream" />
+                        <Choice Kind="OperationCallFlag" Name="Create" />
+                        <PinReference Kind="InputPin" Name="Path" />
+                        <PinReference Kind="InputPin" Name="Mode" />
+                        <PinReference Kind="InputPin" Name="Access" />
+                        <PinReference Kind="InputPin" Name="Share" />
+                      </p:NodeReference>
+                      <Pin Id="QTzVsbokqEuL4kCNgkqfaZ" Name="Path" Kind="InputPin" />
+                      <Pin Id="L9io7pQ2h9NPvgYZu8PGmb" Name="Mode" Kind="InputPin" DefaultValue="Open" />
+                      <Pin Id="Mg5s38arAwZMxIv3MywhGO" Name="Access" Kind="InputPin" DefaultValue="Read" />
+                      <Pin Id="HsfRSyqSrwoPnlkUNuvnTH" Name="Share" Kind="InputPin" DefaultValue="ReadWrite" />
+                      <Pin Id="BzQVdIFbtmmL692z0PNMAj" Name="Output" Kind="StateOutputPin" />
+                    </Node>
+                    <Node Bounds="515,419,168,26" Id="HMw6ybbH5kMLB3zcw4nZdH">
+                      <p:NodeReference LastCategoryFullName="ExcelDataReader.ExcelDataReaderExtensions" LastSymbolSource="ExcelDataReader.DataSet.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="AsDataSet" />
+                      </p:NodeReference>
+                      <Pin Id="GDjgndyk7h8NC4Epg9KMvn" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="Fu2Mip37l85PPClTg8zd4r" Name="Configuration" Kind="InputPin" />
+                      <Pin Id="OBHzvLG5Z7pNZjx7qZueh0" Name="Result" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="442,420,59,26" Id="O5uHgVw7VcqNCkQ4KqHt5P">
+                      <p:NodeReference LastCategoryFullName="System.Data.IDataReader" LastSymbolSource="System.Data.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="Close" />
+                        <CategoryReference Kind="AssemblyCategory" Name="IDataReader" NeedsToBeDirectParent="true" />
+                      </p:NodeReference>
+                      <Pin Id="USCnkQRrwFbLsWOZYOMabQ" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="RNWykkfO1OUMBqDFXe1orw" Name="Output" Kind="StateOutputPin" />
+                    </Node>
+                    <Node Bounds="512,218,55,19" Id="QGXkiLsYX42Ncw2dkWrxUl">
+                      <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="VL.CoreLib.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="ToString" />
+                      </p:NodeReference>
+                      <Pin Id="RKPCPvsdM7XLdkTUFLpq7E" Name="Input" Kind="InputPin" />
+                      <Pin Id="FbT965uCGjEQLNTBFmxSfh" Name="Result" Kind="OutputPin" />
+                    </Node>
+                  </Patch>
+                  <ControlPoint Id="AvCC6bIi5kiMiGKG0nsFVc" Bounds="518,460" Alignment="Bottom" />
+                  <ControlPoint Id="PIY0Q653olfM9P5OdpaSIv" Bounds="518,202" Alignment="Top" />
+                </Node>
               </Patch>
-              <ControlPoint Id="J4DWN9wCKz5QYoGsl1GhuX" Bounds="514,175" Alignment="Top" />
-              <ControlPoint Id="FP61FZHoA7rO5hSHofMXDI" Bounds="616,174" Alignment="Top" />
-              <ControlPoint Id="LuPlRMDV4O0QHxsk9A4RbD" Bounds="575,174" Alignment="Top" />
-              <ControlPoint Id="F34ALfIE6yFMFFdvfKN9V0" Bounds="533,174" Alignment="Top" />
-              <ControlPoint Id="HD7t4O84q1LL7fvVmaDXvw" Bounds="555,174" Alignment="Top" />
+              <ControlPoint Id="Fy7QiY0fsPxNN2CzG1wndP" Bounds="681,174" Alignment="Top" />
             </Node>
             <ControlPoint Id="EHtpV14mJwYMbiFFlkS38M" Bounds="513,42" />
             <ControlPoint Id="OYcSK6krOQJMOO8NAbCRhH" Bounds="617,39" />
@@ -105,16 +120,20 @@
             <ControlPoint Id="KMBNqlnBQFLLG146p3mtjq" Bounds="575,5" />
             <ControlPoint Id="TSa7M5by9cNQGOCtKOuVaS" Bounds="534,98" />
             <ControlPoint Id="CLRCrho3VGbOCPSu3LRXBK" Bounds="554,121" />
+            <Node Bounds="431,100,59,26" Id="UOleygItp18MZDzjR5HAM9">
+              <p:NodeReference LastCategoryFullName="IO.Path" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="FileExists" />
+              </p:NodeReference>
+              <Pin Id="DslTepYJsGMPtKaiiCF4X4" Name="Input" Kind="StateInputPin" />
+              <Pin Id="RoW0sYHLve2PrIU5xEHvhX" Name="Exists" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="NuqbuIjilXHPl2nFj6HyNC" Bounds="679,94" />
           </Canvas>
           <ProcessDefinition Id="TBEagzv5yDCOHmbXaHlgxx">
             <Fragment Id="MUdEp9syKqePSPqA7Dk6cX" Patch="Ivhzw16ikqdP2cushKytNc" Enabled="true" />
             <Fragment Id="CKxpSdzkFkSMzmMCcVa3fU" Patch="F8kzC3526N9Mal1dp07xkm" Enabled="true" />
           </ProcessDefinition>
-          <Link Id="ETGmNeMdoBXP5DYLfSPIVJ" Ids="FbT965uCGjEQLNTBFmxSfh,QTzVsbokqEuL4kCNgkqfaZ" />
-          <Link Id="RY3vxhhKlurNspY0EerfCN" Ids="BzQVdIFbtmmL692z0PNMAj,HtA3Kism7phLRykDutbsV6" />
-          <Link Id="BkxtZg0NGXHLcLbV0N85Eh" Ids="NHRXDkyhCvCPjYR99BilQX,GDjgndyk7h8NC4Epg9KMvn" />
-          <Link Id="MIpdJKlOwZeP4NrbqDlXBo" Ids="OBHzvLG5Z7pNZjx7qZueh0,COAk9eJUMjmQb6OWdAzgHl" />
-          <Link Id="HRUqBBE7GfkO6CVQy9QhKZ" Ids="NHRXDkyhCvCPjYR99BilQX,USCnkQRrwFbLsWOZYOMabQ" />
           <Link Id="VzT8hoJydv1MVin70ZPmmP" Ids="Q8VtIGfjLKTNv7cUm9HotA,LX2iMuwB2FDPIHqteyKfhi" />
           <Link Id="CRda4OlrHg2NMUUl2qBfLO" Ids="J4DWN9wCKz5QYoGsl1GhuX,RKPCPvsdM7XLdkTUFLpq7E" />
           <Link Id="EuVt2njG0FpPlA9YgCxYVY" Ids="QOcu7ZQdXqFOyk08OfqPtW,EHtpV14mJwYMbiFFlkS38M" IsHidden="true" />
@@ -143,9 +162,22 @@
             <Pin Id="OCBCz2am5ILNyXNdyeALhc" Name="Mode" Kind="InputPin" Bounds="535,102" DefaultValue="Open" />
             <Pin Id="CRgRgSMsRisNnPY1jo7LRZ" Name="Access" Kind="InputPin" Bounds="554,120" />
             <Pin Id="F00JAlyyFf9MKJ8bZb6ITD" Name="Share" Kind="InputPin" Bounds="575,5" DefaultValue="Read" />
-            <Pin Id="U0ISUkQtvezPQaNkmKe2V4" Name="Configuration" Kind="InputPin" Bounds="617,39" />
+            <Pin Id="U0ISUkQtvezPQaNkmKe2V4" Name="Configuration" Kind="InputPin" Bounds="617,39" Visibility="Optional" />
             <Pin Id="Hhbr9WJLKtEP1L0URTkdiw" Name="DataSet" Kind="OutputPin" Bounds="517,549" />
+            <Pin Id="E1d0QRGvJN0O3wUbyOAM6M" Name="DataSetConfiguration" Kind="InputPin" Bounds="683,76" Visibility="Optional" />
           </Patch>
+          <Link Id="LqJ5A1gxUnqLFbbWVqdfUd" Ids="EHtpV14mJwYMbiFFlkS38M,DslTepYJsGMPtKaiiCF4X4" />
+          <Link Id="ETGmNeMdoBXP5DYLfSPIVJ" Ids="FbT965uCGjEQLNTBFmxSfh,QTzVsbokqEuL4kCNgkqfaZ" />
+          <Link Id="RY3vxhhKlurNspY0EerfCN" Ids="BzQVdIFbtmmL692z0PNMAj,HtA3Kism7phLRykDutbsV6" />
+          <Link Id="BkxtZg0NGXHLcLbV0N85Eh" Ids="NHRXDkyhCvCPjYR99BilQX,GDjgndyk7h8NC4Epg9KMvn" />
+          <Link Id="HRUqBBE7GfkO6CVQy9QhKZ" Ids="NHRXDkyhCvCPjYR99BilQX,USCnkQRrwFbLsWOZYOMabQ" />
+          <Link Id="FEGEoAsYekRMH0WnUrOdq6" Ids="RoW0sYHLve2PrIU5xEHvhX,G3sfQmF80JfPbmAOyHi3bq" />
+          <Link Id="M8sHxaJOc2kOpkWfONhF70" Ids="PIY0Q653olfM9P5OdpaSIv,AvCC6bIi5kiMiGKG0nsFVc" IsFeedback="true" />
+          <Link Id="MhmlTcyNieLLl3XyksC9F8" Ids="OBHzvLG5Z7pNZjx7qZueh0,AvCC6bIi5kiMiGKG0nsFVc" />
+          <Link Id="TeMnv6hRoIqOpfB33FbOqf" Ids="AvCC6bIi5kiMiGKG0nsFVc,COAk9eJUMjmQb6OWdAzgHl" />
+          <Link Id="LSPrMqYeJquP3bFDxIuFEY" Ids="Fy7QiY0fsPxNN2CzG1wndP,Fu2Mip37l85PPClTg8zd4r" />
+          <Link Id="E1UoCfMiCg3QNb4xZJD8An" Ids="NuqbuIjilXHPl2nFj6HyNC,Fy7QiY0fsPxNN2CzG1wndP" />
+          <Link Id="J3u6mwiFSrhLpGN0nCj8Zz" Ids="E1d0QRGvJN0O3wUbyOAM6M,NuqbuIjilXHPl2nFj6HyNC" IsHidden="true" />
         </Patch>
       </Node>
       <!--
